@@ -1,0 +1,30 @@
+{
+  "name": "typescript-fundamentals",
+  "version": "1.0.0",
+  "description": "<h2>O que é?</h2> <p>     <strong>TypeScript</strong> é um superset para JavaScript, com <strong>tipagem estática, novos recursos</strong> e que <strong>compila para JavaScript puro</strong>. </p>",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Anderson-Andre-P/typescript-fundamentals.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Anderson-Andre-P/typescript-fundamentals/issues"
+  },
+  "homepage": "https://github.com/Anderson-Andre-P/typescript-fundamentals#readme",
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.5.0",
+    "@typescript-eslint/parser": "^5.5.0",
+    "eslint": "^8.3.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "prettier": "^2.5.0",
+    "ts-node": "^10.4.0",
+    "typescript": "^4.5.2"
+  }
+}
