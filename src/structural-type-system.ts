@@ -1,16 +1,14 @@
-// Condicional (Recomendável)
-const body1 = document.querySelector('body');
-if (body1) body1.style.background = 'red';
+type VerifyUserFn = (user: User, setValue: User) => boolean;
+type User = { username: string; password: string };
 
-// Non-null assertion (!)  (Não recomendável)
-const body2 = document.querySelector('body')!;
-body2.style.background = 'red';
+const verifyUser: VerifyUserFn = (user, sentValue) => {
+    return (
+        user.username === sentValue.username &&
+        user.password === sentValue.password
+    );
+};
 
-// Type assertion (Recomendável)
-const body3 = document.querySelector('body') as HTMLBodyElement;
-body3.style.background = 'red';
-
-// HTMLElement (Recomendável)
-const input = document.querySelector('.input') as HTMLInputElement;
-input.value = 'Any thing';
-input.focus();
+const bdUser = { username: 'andre', password: '1234' };
+const sentUser = { username: 'andre', password: '1234' };
+const loggedIn = verifyUser(bdUser, sentUser);
+console.log(loggedIn);

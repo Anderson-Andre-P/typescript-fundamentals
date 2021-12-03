@@ -8,7 +8,7 @@ body20.style.background = 'red';
 
 // Type assertion (Recomendável)
 const body30 = document.querySelector('body') as HTMLBodyElement;
-body3.style.background = 'red';
+body30.style.background = 'red';
 
 // HTMLElement (Recomendável)
 const input0 = document.querySelector('.input') as HTMLInputElement;
